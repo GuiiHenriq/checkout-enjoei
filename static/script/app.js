@@ -1,4 +1,5 @@
-/*const imageProduct = document.getElementById('image-product')
+/* Variables Price */
+const imageProduct = document.getElementById('image-product')
 const radios = document.getElementsByName('coupons')
 const noneCoupons = document.getElementById('none-coupons')
 const withCoupons = document.getElementById('with-coupons')
@@ -7,14 +8,8 @@ const discount = document.getElementById('discount')
 const price = document.getElementById('price')
 const shippingPrice = document.getElementById('shipping-price')
 const totalPrice = document.getElementById('total-price')
-const modalConfirmOffer = document.getElementById('modal-confirm-offer')
-const modalCancelOffer = document.getElementById('modal-cancel-offer')
-const closeModalConfirm = document.getElementById('close-modal-confirm')
-const closeModalCancel = document.getElementById('close-modal-cancel')
-const close = document.getElementById('close')
-const buttonCancelOffer = document.getElementById('button-cancel-offer')
-const buttonConfirmOffer = document.getElementById('button-confirm-offer')
 
+/* Function Checkout */
 const getCheckout = () => {
   const request = fetch('/api/checkouts/6544', {
     method: 'get'
@@ -54,41 +49,8 @@ const getCheckout = () => {
 }
 getCheckout()
 
-buttonConfirmOffer.addEventListener('click', () => modalConfirmOffer.classList.add('is-active'))
-buttonCancelOffer.addEventListener('click', () => modalCancelOffer.classList.add('is-active'))
-closeModalConfirm.addEventListener('click', () => modalConfirmOffer.classList.remove('is-active'))
-closeModalCancel.addEventListener('click', () => modalCancelOffer.classList.remove('is-active'))
-*/
 
 /* Modal */
-function initModalConfirmed() {
-  const btnOpen = document.querySelector('#button-confirm-offer');
-  const btnClose = document.querySelector('.modal-confirmed .close');
-  const containerModal = document.querySelector('[data-modal="modal-confirmed"]');
-
-  if(btnOpen && btnClose && containerModal) {
-    function openModal(event) {
-      event.preventDefault();
-      containerModal.classList.add('ativo');
-    }
-
-    function closeModal(event) {
-      event.preventDefault();
-      containerModal.classList.remove('ativo');
-    }
-
-    function clickClose(event) {
-      if(event.target === this) {
-        closeModal(event);
-      }
-    }
-
-    btnOpen.addEventListener('click', openModal);
-    btnClose.addEventListener('click', closeModal);
-    containerModal.addEventListener('click', clickClose);
-  }
-}
-
 function initModalCanceled() {
   const btnOpen = document.querySelector('#button-cancel-offer');
   const btnClose = document.querySelector('.modal-canceled .close');
@@ -117,5 +79,32 @@ function initModalCanceled() {
   }
 }
 
-initModalConfirmed();
+function initModalConfirmed() {
+  const btnOpen = document.querySelector('#button-confirm-offer');
+  const btnClose = document.querySelector('.modal-confirmed .close');
+  const containerModal = document.querySelector('[data-modal="modal-confirmed"]');
+
+  if(btnOpen && btnClose && containerModal) {
+    function openModal(event) {
+      event.preventDefault();
+      containerModal.classList.add('ativo');
+    }
+
+    function closeModal(event) {
+      event.preventDefault();
+      containerModal.classList.remove('ativo');
+    }
+
+    function clickClose(event) {
+      if(event.target === this) {
+        closeModal(event);
+      }
+    }
+
+    btnOpen.addEventListener('click', openModal);
+    btnClose.addEventListener('click', closeModal);
+    containerModal.addEventListener('click', clickClose);
+  }
+}
 initModalCanceled();
+initModalConfirmed();
