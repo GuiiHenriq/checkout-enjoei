@@ -1,26 +1,32 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,700');
+/* Font */
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500');
 
-*{
+* {
   margin: 0;
   padding: 0;
-  font-family: 'Montserrat'
+  font-family: 'Montserrat', sans-serif;
 }
+
 .header {
 	position: relative;
 	height: 60px;
   background: #ffffff; 
 }
+
 .hidden {
   display: none;
 }
+
 .section {
   border-top: 1px solid #f4f2f0;
 }
+
 .header img {
 	display: block;
 	margin: 10px auto;
 	height: 40px;
 }
+
 .enjoei-button {
   box-sizing: border-box;
   display: inline-block;
@@ -31,27 +37,50 @@
   vertical-align: middle;
   cursor: pointer;
 }
+
 .button-group {
   display: flex;
   margin-top: 20px;
   justify-content: space-around;
 }
+
 .enjoei-button.is-enjoei-primary {
   background-color: #f05b78;
   color: white;
   border: 1px solid #d25069;
   border-bottom-width: 3px;
+  font-weight: bold;
 }
+
+.enjoei-button.is-enjoei-primary:hover {
+  background-color: #fff;
+  color: #d25069;
+  border: 1px solid #e4e1df;
+  border-bottom-width: 3px;
+  font-weight: bold;
+}
+
 .enjoei-button.is-enjoei-secondary {
   color: #f05b78;
   background-color: white;
   border: 1px solid #e4e1df;
   border-bottom-width: 3px;
+  font-weight: bold;
 }
+
+.enjoei-button.is-enjoei-secondary:hover {
+  background-color: #f05b78;
+  color: white;
+  border: 1px solid #d25069;
+  border-bottom-width: 3px;
+  font-weight: bold;
+}
+
 .product-image {
   margin: 10px auto 10px auto;
-  width: 100px;
+  width: 221px;
 }
+
 .section-title {
   font-weight: 700;
 }
@@ -62,9 +91,11 @@
   align-items: center;
   justify-content: center;
 }
+
 .checkout-image img {
   border-radius: 3px;
 }
+
 .checkout-header {
   align-items: center;
   background-color: rgb(249, 248, 247);
@@ -78,6 +109,7 @@
   padding: 20px 30px;
   -moz-osx-font-smoothing: grayscale;
 }
+
 .checkout-title {
   box-sizing: border-box;
   color: rgb(91, 88, 85);
@@ -86,14 +118,15 @@
   line-height: 20px;
   -moz-osx-font-smoothing: grayscale;
 }
-.container ul{
+
+.container ul {
   list-style: none;
   margin: 0;
   padding: 0;
 	overflow: auto;
 }
 
-ul li{
+ul li {
   color: #AAAAAA;
   display: block;
   position: relative;
@@ -102,12 +135,12 @@ ul li{
   height: 50px;
 }
 
-ul li input[type=radio]{
+ul li input[type=radio] {
   position: absolute;
   visibility: hidden;
 }
 
-ul li label{
+ul li label {
   display: block;
   position: relative;
   font-weight: 300;
@@ -119,8 +152,7 @@ ul li label{
   -webkit-transition: all 0.25s linear;
 }
 
-
-ul li .check{
+ul li .check {
   display: block;
   position: absolute;
   border: 1px solid #AAAAAA;
@@ -147,22 +179,20 @@ ul li .check::before {
 	transition: background 0.15s linear;
 	-webkit-transition: background 0.15s linear;
 }
-input[type=radio]:checked ~ .check {
-}
 
-input[type=radio]:checked ~ .check::before{
+input[type=radio]:checked ~ .check::before {
   background: #f05b78;
 }
 
-input[type=radio]:checked ~ label{
+input[type=radio]:checked ~ label {
   color: #f05b78;
 }
+
 .value-coupon-list {
   float: right;
   margin-right: 30px
 }
 
-/* Modal */
 .modal-container {
   display: none;
   background: rgba(0, 0, 0, 0.5);
@@ -184,6 +214,7 @@ input[type=radio]:checked ~ label{
   max-width: 300px;
   border-radius: 10px;
   background: #fff;
+  color: #5b5855;
   position: relative;
   padding: 40px;
   text-align: center;
@@ -192,6 +223,17 @@ input[type=radio]:checked ~ label{
 .modal img {
   width: 34px;
   margin-bottom: 20px;
+}
+
+.modal p {
+  color: #5b5855;
+  font-weight: 500;
+  font-size: 1.125em;
+  margin-bottom: 10px;
+}
+
+.modal span {
+  font-size: 1em;
 }
 
 .close {

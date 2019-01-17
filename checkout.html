@@ -5,19 +5,24 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>enjoei</title>
-  <link rel="icon" type="image/png" href="../../../favicon-16x16.png" sizes="16x16">
+  <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16">
+  <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="favicon-96x96.png" sizes="96x96">
   <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css">-->
   <!--<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">-->
   <link rel="stylesheet" href="../../../css/style.css">
   <link rel="stylesheet" href="../../../css/resume.css">
 </head>
 <body>
+
+ 
   <header class="header">
     <img src="../../../img/logo.svg" alt="logo enjoei">
   </header>
-    <div class="checkout-image section">
-      <img id="image-product" class="product-image">
-    </div>
+
+  <div class="checkout-image section">
+    <img id="image-product" class="product-image">
+  </div>
     <div class="container Checkout__coupon">
       <div class="row">
       <div class="col-md-12 checkout-header">
@@ -43,6 +48,7 @@
         </form>
       </div>
     </div>
+
     <div class="container checkout-header section">
       <div class="row">
         <div class="col-md-12">
@@ -79,73 +85,31 @@
   </div>
 
 
-  
+  <!-- Modal Canceled Purchase -->
+  <section class="modal-container" data-modal="modal-canceled">
+    <div class="modal modal-canceled">
+      <button class="close">X</button>
+      <div class="content">
+        <img src="../../../img/cart-cancel.png" alt="Cart">
+        <p>compra cancelada</p>
+        <span>o pedido não foi enviado e você não será cobrado</span>
+      </div> 
+    </div>
+  </section>
+
+  <!-- Modal Confirmed Purchase -->
   <section class="modal-container" data-modal="modal-confirmed">
     <div class="modal modal-confirmed">
       <button class="close">X</button>
       <div class="content">
-        <img src="../../../img/cart.png" alt="Cart">
-        <p>
-          <strong>compra confirmada</strong><br>
-          enviaremos atualizações sobre o pedido para o seu email
-        </p>
+        <img src="../../../img/cart-confirm.png" alt="Cart">
+        <p>compra confirmada</p>
+        <span>enviaremos atualizações sobre o pedido para o seu email</span>
+      </div> 
     </div>
   </section>
 
-  <section class="modal-container" data-modal="modal-canceled">
-      <div class="modal modal-canceled">
-        <button class="close">X</button>
-        <div class="content">
-          <img src="../../../img/cart-cancel.png" alt="Cart">
-          <p>
-            <strong>compra cancelada</strong><br>
-            o pedido não foi enviado e você não será cobrado
-          </p>
-      </div>
-    </section>
-
-
-<!-- Modal accept -->
-  <div id="modal-confirm-offer" class="modal is-small">
-    <div class="modal-background"></div>
-    <div class="modal-content">
-      <div class="box">
-        <div class="media-content">
-          <div class="content">
-            <div class="icon">
-              <i class="fas fa-shopping-cart confirm-cart"></i>
-            </div>
-            <p>
-              <strong>compra confirmada</strong> <br>
-              enviaremos atualizações sobre o pedido no seu email.
-            </p>
-          </div>
-        </div>
-      </div>
-    <button class="modal-close is-large" id="close-modal-confirm"></button>
-  </div>
-  </div>
-  <div id="modal-cancel-offer" class="modal is-small">
-      <div class="modal-background"></div>
-      <div class="modal-content">
-        <div class="box">
-          <div class="media-content">
-            <div class="content">
-              <div class="icon">
-                <i class="fas fa-shopping-cart cancel-cart"></i>
-              </div>
-              <p>
-                <strong>compra cancelada</strong> <br>
-                enviaremos atualizações sobre o pedido no seu email.
-              </p>
-            </div>
-          </div>
-      </div>
-      <button class="modal-close is-large" id="close-modal-cancel"></button>
-    </div>
-    </div>
-
-  <script src="../../../script/app.js"></script>
-  <script defer src="https://use.fontawesome.com/releases/v5.1.0/js/all.js"></script>
+<script src="../../../script/app.js"></script><!-- App.js -->
+<script defer src="https://use.fontawesome.com/releases/v5.1.0/js/all.js"></script><!-- Icons FontAwesome -->
 </body>
 </html>

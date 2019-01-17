@@ -12,6 +12,7 @@ ul.checkout-list li {
   width: 100%;
   justify-content: space-between;
 }
+
 .checkout-list:first-child {
   margin-top: 10px;
 }
@@ -19,6 +20,7 @@ ul.checkout-list li {
 span.checkout-item {
   margin-left: 20px;
 }
+
 span.checkout-item-value {
   margin-right: 20px;
 }
@@ -27,13 +29,4 @@ span.checkout-item-value {
   color: black;
   font-weight: 700;
 }
-.coupon-value {
-  color: #f05b78;
-}
-.cancel-cart {
-  color: #f0a35b;
-}
-.confirm-cart {
-  color: #3bcc2d;
-  margin: 0 auto;
-}
+.coupon-value { color: #f05b78; }
