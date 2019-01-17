@@ -5,7 +5,12 @@ This application has the objective of simulating the checkout process of Enjoei!
 
 **_Attention: Make sure you have NodeJS, NPM and Git installed!_**
 
-  
+## Resources Used
+Javascript Vanilla ES6
+ESLint
+BEM CSS
+
+
 ## Installation
 
 Clone this repository:
