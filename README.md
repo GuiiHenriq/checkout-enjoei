@@ -1,5 +1,5 @@
 # Checkout Enjoei
-> Enjoei ![](static/img/logo.svg)
+> Enjoei ![](static/img/logo.png)
 
 This application has the objective of simulating the checkout process of Enjoei!
 
