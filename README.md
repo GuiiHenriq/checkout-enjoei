@@ -33,7 +33,7 @@ Take a test:
 node test - It is possible that errors appear in ESLint itself, just ignore, skip this action (Ctrl + C) and proceed to the next step (this process takes 05 ~ 15 seconds)
 ```
 
-Start npm and run the application:
+Start node and run the application:
 
 ```sh
 node server.js
