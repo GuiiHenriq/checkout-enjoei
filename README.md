@@ -11,7 +11,7 @@ This application has the objective of simulating the checkout process of Enjoei!
 Clone this repository:
 
 ```sh
-git clone X
+git clone https://github.com/GuiiHenriq/checkout-enjoei.git
 ```
 
 Install the dependencies:
