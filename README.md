@@ -38,6 +38,11 @@ Start node and run the application:
 ```sh
 node server.js
 ```
+
+Browser:
+```sh
+To view the application, open "http://localhost:3000" in your browser
+```
  
   
 ## Test, Test, Test
