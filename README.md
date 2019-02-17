@@ -1,5 +1,5 @@
 # Checkout Enjoei
-> Enjoei ![](static/img/logo.png)
+> Teste Vaga Front-end Enjoei ![](static/img/logo.png)
 
 This application has the objective of simulating the checkout process of Enjoei!
 
@@ -49,3 +49,7 @@ To view the application, open "http://localhost:3000" in your browser
 
 I used the "node test" or "npm test" itself to check bugs and fix any problems.
 Recommendation: Turn the "npm test" command before running the application, It is possible that errors appear in ESLint itself, just ignore and skip this action (Ctrl + C).
+
+## Online
+
+https://checkout-enjoei.netlify.com/
